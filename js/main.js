@@ -17,9 +17,12 @@ function createSelector(layer) {
           query = "select * from piro_pois where dogs_allowed = 'Yes' ";           
       } else if(selected == 'handicapped') {
           query = "select * from piro_pois where handicapped_accessible = 'Yes' ";          
-      } else if(selected == 'beaches') {
+      } else if(selected == 'picnic') {
           query = "select * from piro_pois where picnic_area = 'Yes' ";
+      }  else if(selected == 'beaches') {
+          query = "select * from piro_pois where type = 'Beach' ";
       } 
+        
       // change the query in the layer to update the map
       layer.setQuery(query);      
     });
@@ -121,6 +124,7 @@ var ibz = cartodb.createLayer(map, {
 }).on("done",function(lyr){
     ibz = lyr;    
    //ibz.addTo(map);
+    cartodb.vis.Vis.addInfowindow(map, lyr.getSubLayer(0), ['name', 'ownership']);
     lyr.setZIndex(0);
   })  
 

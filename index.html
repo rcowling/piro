@@ -5,7 +5,13 @@
 		<meta name="viewport" content="width=device-width">
 		<title>Pictured Rocks National Lakeshore</title>
 
-		
+		<script src="js/redirection-mobile.js"></script>
+			<script>
+				SA.redirection_mobile ({
+		mobile_url : "blogchef.net/maps/sidebar",
+		mobile_prefix : "http"
+	});
+			</script>
         <!--put your external stylesheet links here--> 
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
@@ -32,13 +38,15 @@
  <div class="container-fluid">
     <div class="row">    
         <div class="sidebar col-xs-2">
+        <br>    
         <center><p>Filter Scenic Sites</p></center>                
         <ul class="nav" id="layer_selector">       
         <li data="all" class="selected">All Amenities</li>
         <li data="rest">Restrooms</li>
         <li data="handicapped">Wheelchair Accessible</li>
         <li data="dogs">Dogs Allowed</li>
-        <li data="beaches">Picnic Area</li>
+        <li data="picnic">Picnic Area</li>
+        <li data="beaches">Swimming Area</li>     
       </ul>
         <br>
         <center><p>Find Scenic Sites</p>

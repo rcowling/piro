@@ -5,8 +5,8 @@
     src: url(newparks.otf);
 }
 body {
-  padding-top: 50px;
-      
+  padding-top: 50px; 
+    
 }
 
 .container-fluid, .row{
@@ -17,7 +17,7 @@ body {
 .sidebar {
   position: absolute;
   height: 100%;    
-  padding: 12px;
+  padding: 0px;
   background-color: #B6E69E;
   border-right: 1px solid #000;   
 }
@@ -34,6 +34,7 @@ form {
   height:100%;
   position: absolute;
   right:0;
+      
 }
 
 .navbar navbar-inverse navbar-fixed-top {
@@ -43,6 +44,7 @@ form {
 html {
     background-color: #B6E69E;
     border-right: 1px solid #000; 
+    
 }
 
 .ui-autocomplete-loading {
@@ -58,7 +60,7 @@ div.cartodb-searchbox {
 li {
 
 border-bottom: 1px solid white;
-padding: 15px 10px; 
+padding: 15px 15px;    
 cursor: pointer;
 }
 
